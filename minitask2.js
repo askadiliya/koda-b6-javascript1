@@ -41,7 +41,7 @@ const my = [
 console.log(my[0].favorite[3].fruit.is);
 
 const num = {
-  first: [2, "3"],
-  second: [5, 7, "2"],
+  first: [15, 16],
+  second: [14, 15, 16],
 };
 console.log(num.first[1] + num.second[2]);
