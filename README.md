@@ -6,14 +6,24 @@
 flowchart TD
 A@{ shape: circle, label: "Mulai" }
 B@{ shape: lean-r, label: "Input : r" }
-C@{ shape: rect, label: "phi = 3.14" }
-D@{ shape: rect, label: "luasLingkaran =phi* r * r" }
-E@{ shape: lean-r, label: 'Output : "Luas lingkaran adalah" +  luasLingkaran' }
-F@{ shape: rect, label: "kelilingLingkaran =2 * phi * r" }
-G@{ shape: lean-r, label: 'Output : "Keliling Lingkaran adalah" + kelilingLingkaran' }
-H@{ shape: dbl-circ, label: "Selesai" }
+C@{ shape: diamond, label: "if r % 7 == 0" }
+D@{ shape: rect, label: "phi = 22/7" }
+E@{ shape: rect, label: "phi = 3.14" }
+F@{ shape: rect, label: "luasLingkaran =phi* r * r" }
+G@{ shape: lean-r, label: 'Output : "Luas lingkaran adalah" +  luasLingkaran' }
+H@{ shape: rect, label: "kelilingLingkaran =2 * phi * r" }
+I@{ shape: lean-r, label: 'Output : "Keliling Lingkaran adalah" + kelilingLingkaran' }
+J@{ shape: dbl-circ, label: "Selesai" }
+K@{ shape: rect, label: "luasLingkaran =phi* r * r" }
+L@{ shape: rect, label: "kelilingLingkaran =2 * phi * r" }
+M@{ shape: lean-r, label: 'Output : "Luas lingkaran adalah" +  luasLingkaran' }
+N@{ shape: lean-r, label: 'Output : "Keliling Lingkaran adalah" + kelilingLingkaran' }
 
-A-->B-->C-->D-->E-->F-->G-->H
+A-->B-->
+C-->D
+C-->E
+D-->F-->H-->G-->I-->J
+E-->K-->L-->M-->N-->J
 
 
 ```
