@@ -20,8 +20,8 @@ M@{ shape: lean-r, label: 'Output : "Luas lingkaran adalah" +  luasLingkaran' }
 N@{ shape: lean-r, label: 'Output : "Keliling Lingkaran adalah" + kelilingLingkaran' }
 
 A-->B-->
-C-->D
-C-->E
+C--True-->D
+C--False-->E
 D-->F-->H-->G-->I-->J
 E-->K-->L-->M-->N-->J
 
