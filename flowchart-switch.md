@@ -2,18 +2,18 @@
 flowchart TD
 A@{ shape: circle, label: "Start" }
 B@{ shape: lean-r, label: "Input:
-    IS_FEATURE_ACTIVE = ''
-    num = 100" }
+    IS_FEATURE_ACTIVE = ''" }
+L@{ shape: rect, label: "num = 100" }
 C@{ shape: diamond, label: "IS_FEATURE_ACTIVE" }
 D@{ shape: lean-r, label: 'Output: "Hello"' }
 E@{ shape: lean-r, label: 'Output: "Hi"' }
-F@{ shape: lean-r, label: "Default" }
+F@{ shape: rect, label: "default" }
 G@{ shape: diamond, label: "num === 100" }
 H@{ shape: lean-r, label: "Output: num" }
 I@{ shape: lean-r, label: 'Output: "Bonjour!"' }
 J@{ shape: lean-r, label: 'Output: "Lanjutan"' }
 K@{ shape: dbl-circ, label: "Stop" }
-A --> B --> C
+A --> B --> L --> C
 C --True--> D
 C --False--> E
 C --Default--> F
